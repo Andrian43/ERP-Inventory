@@ -9,7 +9,7 @@
                 <div class="col-auto my-4">
                     <h1 class="page-header-title">
                         <div class="page-header-icon"><i class="fa-solid fa-cash-register"></i></div>
-                        Approved Purchase List
+                        Laporan Masuk
                     </h1>
                 </div>
                 <div class="col-auto my-4">

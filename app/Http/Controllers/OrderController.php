@@ -51,6 +51,9 @@ class OrderController extends Controller
             ->paginate($row)
             ->appends(request()->query());
 
+         // Memanipulasi hasil paginasi
+        $orders->setCollection($orders->getCollection()->reverse());
+
         return view('orders.complete-orders', [
             'orders' => $orders
         ]);

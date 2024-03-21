@@ -61,8 +61,8 @@
                                 <h4 class="inv-title-1">Store</h4>
                                 <p class="inv-from-1">Name Store</p>
                                 <p class="inv-from-1">(+62) 123 123 123</p>
-                                <p class="inv-from-1">email@example.com</p>
-                                <p class="inv-from-2">Cirebon, Jawa Barat, Indonesia</p>
+                                <p class="inv-from-1">insultingarrogant@gmail.com</p>
+                                <p class="inv-from-2">Kuningan, Jawa Barat, Indonesia</p>
                             </div>
                         </div>
                     </div>
@@ -107,7 +107,7 @@
                     {{-- <div class="invoice-informeshon-footer">
                         <ul>
                             <li><a href="#">www.website.com</a></li>
-                            <li><a href="mailto:sales@hotelempire.com">info@example.com</a></li>
+                            <li><a href="mailto:sales@hotelempire.com">insultingarrogant@gmail.com</a></li>
                             <li><a href="tel:+088-01737-133959">+62 123 123 123</a></li>
                         </ul> --}}
                     </div>
@@ -135,7 +135,7 @@
     <div class="modal-dialog modal-lg" role="document">
         <div class="modal-content">
             <div class="modal-header">
-                <h3 class="modal-title text-center mx-auto" id="modalCenterTitle">Invoice of {{ $customer->name }}<br/>Total Amount ${{ Cart::total() }}</h3>
+                <h3 class="modal-title text-center mx-auto" id="modalCenterTitle">Invoice of {{ $customer->name }}<br/>Total Amount Rp.{{ Cart::total() }}</h3>
             </div>
 
             <form action="{{ route('pos.createOrder') }}" method="POST">

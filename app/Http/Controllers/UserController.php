@@ -20,14 +20,18 @@ class UserController extends Controller
         if ($row < 1 || $row > 100) {
             abort(400, 'The per-page parameter must be an integer between 1 and 100.');
         }
-
+    
+        $orderBy = 'name'; // Attribute for sorting in ascending order
+    
         $users = User::filter(request(['search']))
-            ->sortable()
+            ->orderBy($orderBy, 'asc') // Sorting in ascending order
             ->paginate($row)
             ->appends(request()->query());
-
+    
         return view('users.index', [
-            'users' => $users
+            'users' => $users,
+            'orderBy' => $orderBy,
+            'orderDirection' => 'asc', // Set order direction to asc
         ]);
     }
 

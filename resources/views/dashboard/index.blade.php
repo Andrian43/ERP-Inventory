@@ -45,14 +45,14 @@
                 <div class="card-body">
                     <div class="d-flex justify-content-between align-items-center">
                         <div class="me-3">
-                            <div class="text-white-75 small">Earnings (Monthly)</div>
-                            <div class="text-lg fw-bold">$40,000</div>
+                            <div class="text-white big">Customers</div>
+                            <div class="text-lg fw-bold"></div>
                         </div>
-                        <i class="feather-xl text-white-50" data-feather="calendar"></i>
+                        <i class="feather-xl text-white-50" data-feather=""></i>
                     </div>
                 </div>
                 <div class="card-footer d-flex align-items-center justify-content-between small">
-                    <a class="text-white stretched-link" href="#">View Report</a>
+                    <a class="text-white stretched-link" href="{{ route('customers.index') }}">View Report</a>
                     <div class="text-white"><i class="fas fa-angle-right"></i></div>
                 </div>
             </div>
@@ -62,14 +62,14 @@
                 <div class="card-body">
                     <div class="d-flex justify-content-between align-items-center">
                         <div class="me-3">
-                            <div class="text-white-75 small">Earnings (Annual)</div>
-                            <div class="text-lg fw-bold">$215,000</div>
+                            <div class="text-white big">Suppliers</div>
+                            <div class="text-lg fw-bold"></div>
                         </div>
-                        <i class="feather-xl text-white-50" data-feather="dollar-sign"></i>
+                        <i class="feather-xl text-white-50" data-feather=""></i>
                     </div>
                 </div>
                 <div class="card-footer d-flex align-items-center justify-content-between small">
-                    <a class="text-white stretched-link" href="#">View Report</a>
+                    <a class="text-white stretched-link" href="{{ route('suppliers.index') }}">View Report</a>
                     <div class="text-white"><i class="fas fa-angle-right"></i></div>
                 </div>
             </div>
@@ -79,14 +79,14 @@
                 <div class="card-body">
                     <div class="d-flex justify-content-between align-items-center">
                         <div class="me-3">
-                            <div class="text-white-75 small">Task Completion</div>
-                            <div class="text-lg fw-bold">24</div>
+                            <div class="text-white big">Product</div>
+                            <div class="text-lg fw-bold"></div>
                         </div>
                         <i class="feather-xl text-white-50" data-feather="check-square"></i>
                     </div>
                 </div>
                 <div class="card-footer d-flex align-items-center justify-content-between small">
-                    <a class="text-white stretched-link" href="#">View Tasks</a>
+                    <a class="text-white stretched-link" href="{{ route('products.index') }}">View Tasks</a>
                     <div class="text-white"><i class="fas fa-angle-right"></i></div>
                 </div>
             </div>
@@ -96,14 +96,14 @@
                 <div class="card-body">
                     <div class="d-flex justify-content-between align-items-center">
                         <div class="me-3">
-                            <div class="text-white-75 small">Pending Requests</div>
-                            <div class="text-lg fw-bold">17</div>
+                            <div class="text-white big">Pembelian</div>
+                            <div class="text-lg fw-bold"></div>
                         </div>
                         <i class="feather-xl text-white-50" data-feather="message-circle"></i>
                     </div>
                 </div>
                 <div class="card-footer d-flex align-items-center justify-content-between small">
-                    <a class="text-white stretched-link" href="#">View Requests</a>
+                    <a class="text-white stretched-link" href="{{ route('pos.index') }}">View Requests</a>
                     <div class="text-white"><i class="fas fa-angle-right"></i></div>
                 </div>
             </div>

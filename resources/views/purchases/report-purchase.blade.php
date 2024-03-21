@@ -28,7 +28,7 @@
 
 <!-- BEGIN: Main Page Content -->
 <div class="container-xl px-2 mt-n10">
-    <form action="{{ route('purchases.getReportPurchase') }}" method="POST">
+    <form action="{{ route('purchases.getPurchaseReport') }}" method="POST">
         @csrf
         <div class="row">
 
@@ -55,7 +55,7 @@
                             <div class="col-md-6">
                                 <label class="small my-1" for="end_date">End Date <span class="text-danger">*</span></label>
                                 <input class="form-control form-control-solid example-date-input @error('end_date') is-invalid @enderror" name="end_date" id="date" type="date" value="{{ old('end_date') }}">
-                                @error('end_date')
+                                @error('purchase_date')
                                 <div class="invalid-feedback">
                                     {{ $message }}
                                 </div>

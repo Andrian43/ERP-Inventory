@@ -9,10 +9,11 @@
                 <div class="col-auto my-4">
                     <h1 class="page-header-title">
                         <div class="page-header-icon"><i class="fa-solid fa-clock"></i></div>
-                        Complete Orders
+                        Laporan Keluar
                     </h1>
                 </div>
                 <div class="col-auto my-4">
+                    <a href="#" class="btn btn-success add-list my-1"><i class="fa-solid fa-file-export me-3"></i>Export</a>
                     <a href="{{ route('pos.index') }}" class="btn btn-primary add-list my-1"><i class="fa-solid fa-plus me-3"></i>Add</a>
                     <a href="{{ route('products.index') }}" class="btn btn-danger add-list my-1"><i class="fa-solid fa-trash me-3"></i>Clear Search</a>
                 </div>
@@ -21,7 +22,7 @@
             <nav class="mt-4 rounded" aria-label="breadcrumb">
                 <ol class="breadcrumb px-3 py-2 rounded mb-0">
                     <li class="breadcrumb-item"><a href="{{ route('dashboard') }}">Dashboard</a></li>
-                    <li class="breadcrumb-item active">Complete Orders</li>
+                    <li class="breadcrumb-item active">Laporan Keluar</li>
                 </ol>
             </nav>
         </div>

@@ -12,6 +12,7 @@ use App\Http\Controllers\SupplierController;
 use App\Http\Controllers\UnitController;
 use App\Http\Controllers\UserController;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\FifoController;
 
 /*
 |--------------------------------------------------------------------------
@@ -88,6 +89,11 @@ Route::middleware('auth')->group(function () {
     // User Management
     Route::resource('/users', UserController::class)->except(['show']);
     Route::put('/user/change-password/{username}', [UserController::class, 'updatePassword'])->name('users.updatePassword');
+
+    // FIFO
+    Route::get('/enqueue/{item}', [FifoController::class, 'enqueue']);
+    Route::get('/dequeue', [FifoController::class, 'dequeue']);
+    Route::get('/view-queue', [FifoController::class, 'viewQueue']);
 });
 
 require __DIR__.'/auth.php';

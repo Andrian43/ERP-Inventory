@@ -23,21 +23,24 @@ class ProductController extends Controller
     public function index()
     {
         $row = (int) request('row', 10);
-
+    
         if ($row < 1 || $row > 100) {
             abort(400, 'The per-page parameter must be an integer between 1 and 100.');
         }
-
+    
         $products = Product::with(['category', 'unit'])
-                ->filter(request(['search']))
-                ->sortable()
-                ->paginate($row)
-                ->appends(request()->query());
-
+                    ->filter(request(['search']))
+                    ->sortable()
+                    ->paginate($row)
+                    ->appends(request()->query());
+    
+        // Implementasi algoritma LIFO
+        $products->setCollection($products->getCollection()->reverse()); // Balik urutan produk
+    
         return view('products.index', [
             'products' => $products,
         ]);
-    }
+    }    
 
     /**
      * Show the form for creating a new resource.

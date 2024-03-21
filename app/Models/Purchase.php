@@ -11,6 +11,7 @@ class Purchase extends Model
     use HasFactory, Sortable;
 
     protected $fillable = [
+        'product_name',
         'supplier_id',
         'purchase_date',
         'purchase_no',
@@ -29,10 +30,15 @@ class Purchase extends Model
     ];
 
     protected $with = [
+        'product',
         'supplier',
         'user_created',
         'user_updated',
     ];
+
+    public function product(){
+        return $this->belongsTo(Product::class, 'product_id', 'id');
+    }
 
     public function supplier(){
         return $this->belongsTo(Supplier::class, 'supplier_id', 'id');

@@ -31,6 +31,9 @@ class PosController extends Controller
 
         $carts = Cart::content();
 
+        // Memanipulasi hasil paginasi produk
+        $products->setCollection($products->getCollection()->reverse());
+
         return view('pos.index', [
             'products' => $products,
             'customers' => $customers,
